@@ -20,7 +20,7 @@ const Hero = () => {
                     Passionate Front-End Developer <span className="text-white">•</span> React Enthusiast <span className="text-white">•</span> Agile Advocate <span className="text-white">•</span> Scrum Master
                 </h3>
                 <a href="#about" className="z-100 pointer-events-auto mt-5">
-                    <MagicButton title="See my work!" icon={<FaLocationArrow />} position="right" />
+                    <MagicButton title="See my work!" />
                 </a>
             </div>
         </BackgroundGradientAnimation>
