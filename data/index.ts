@@ -73,36 +73,49 @@ export const projects = [
     {
         id: 1,
         title: "3D Solar System Planets to Explore",
-        des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-        img: "/p1.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+        description: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
         link: "https://github.com/adrianhajdin?tab=repositories",
+        className: "project-class-1",
+        imgClassName: "img-class-1",
+        titleClassName: "title-class-1",
+        img: "/p1.svg",
+        spareImg: "/spare-p1.svg", // Add a placeholder or relevant spare image
     },
     {
         id: 2,
         title: "Yoom - Video Conferencing App",
-        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-        img: "/p2.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+        description: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
         link: "https://github.com/adrianhajdin/zoom-clone",
+        className: "project-class-2",
+        imgClassName: "img-class-2",
+        titleClassName: "title-class-2",
+        img: "/p2.svg",
+        spareImg: "/spare-p2.svg", // Add a placeholder or relevant spare image
     },
     {
         id: 3,
         title: "AI Image SaaS - Canva Application",
-        des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-        img: "/p3.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+        description: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
         link: "https://github.com/adrianhajdin/ai_saas_app",
+        className: "project-class-3",
+        imgClassName: "img-class-3",
+        titleClassName: "title-class-3",
+        img: "/p3.svg",
+        spareImg: "/spare-p3.svg", // Add a placeholder or relevant spare image
     },
     {
         id: 4,
         title: "Animated Apple Iphone 3D Website",
-        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-        img: "/p4.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+        description: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
         link: "https://github.com/adrianhajdin/iphone",
+        className: "project-class-4",
+        imgClassName: "img-class-4",
+        titleClassName: "title-class-4",
+        img: "/p4.svg",
+        spareImg: "/spare-p4.svg", // Add a placeholder or relevant spare image
     },
 ];
+
 
 export const testimonials = [
     {
