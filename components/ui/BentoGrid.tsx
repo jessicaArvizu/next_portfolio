@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { Meteors } from "./MeteorEffect";
@@ -7,6 +7,7 @@ import { useState } from "react";
 import animationData from '@/data/confetti.json'
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { WavyBackground } from "./BackgroundWavy";
 
 export const BentoGrid = ({
     className,
@@ -49,7 +50,7 @@ export const BentoGridItem = ({
 
     const [copied, setCopied] = useState(false);
 
-    const hadleCopy = () => {
+    const handleCopy = () => {
         navigator.clipboard.writeText('jessica.arvizu.trabajo@gmail.com');
         setCopied(true);
     }
@@ -69,7 +70,7 @@ export const BentoGridItem = ({
                 border: '1px solid rgba(54, 58, 79,1)',
             }}
         >
-            <div className={`${id === 6} && 'flex justify-center h-full`}>
+            <div className={`${id === 6} && 'flex justify-center h-full'`}>
                 <div className="w-full h-full absolute">
                     {img && (
                         <img
@@ -79,7 +80,7 @@ export const BentoGridItem = ({
                         />
                     )}
                 </div>
-                <div className={`absolute right-0  -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
+                <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
                     {spareImg && (
                         <img
                             src={spareImg}
@@ -88,45 +89,18 @@ export const BentoGridItem = ({
                         />
                     )}
                 </div>
-                {id === 6 && (
-                    <BackgroundGradientAnimation>
-                        <div className="absolute z-50 flex items-center justify-center text-white font-bold">
-
-                        </div>
-                    </BackgroundGradientAnimation>
-                )}
-
-                {id === 6 && (
-                    <div className="mt-5 relative">
-                        <div className={`absolute -bottom-5 right-0`}>
-                            <Lottie options={{
-                                loop: copied,
-                                autoplay: copied,
-                                animationData,
-                                rendererSettings: {
-                                    preserveAspectRatio: 'xMidYMid slice'
-                                }
-                            }} />
-                        </div>
-                        <MagicButton
-                            title={copied ? 'Email copied' : 'Copy my email!'}
-                            icon={<IoCopyOutline />}
-                            otherClasses="`bg-red`"
-                            handleClick={hadleCopy}
-                        />
-
-                    </div>
-                )}
 
                 <div className={cn(
                     titleClassName,
                     'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col p-x-5 p-5 lg:p-10'
                 )}>
-                    <div className="font-sans font-extralight text-sm md:text-xs z-10 text-subtext-1">
-                        {description}
-                    </div>
+
                     <div className="font-sans font-bold text-texttext-lg lg:text-3xl max-w-96 z-10">
                         {title}
+                    </div>
+
+                    <div className="font-sans font-extralight text-sm md:text-xs z-10 text-subtext-1">
+                        {description}
                     </div>
 
                     {id === 2 && <Meteors number={50} />}
@@ -154,7 +128,31 @@ export const BentoGridItem = ({
                             </div>
                         </div>
                     )}
+
+                    {id === 6 && (
+                        <div className="mt-5 relative">
+                            <div
+                                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
+                                    }`}
+                            >
+                                <Lottie options={{
+                                    loop: copied,
+                                    autoplay: copied,
+                                    animationData,
+                                    rendererSettings: {
+                                        preserveAspectRatio: 'xMidYMid slice'
+                                    }
+                                }} />
+                            </div>
+
+                            <MagicButton
+                                title={copied ? "Email is Copied!" : "Copy my email address"}
+                                handleClick={handleCopy}
+                            />
+                        </div>
+                    )}
                 </div>
+
             </div>
         </div>
     );

@@ -13,9 +13,7 @@ const MagicButton = ({
         rounded-xl hover:bg-gray-100/30 hover:cursor-pointer w-full
          bg-white/10 text-sm transition duration-200 gap-2 ${otherClasses}`}
             onClick={handleClick}>
-            {position === 'left' && icon}
             {title}
-            {position === 'right' && icon}
         </button>
     )
 }
