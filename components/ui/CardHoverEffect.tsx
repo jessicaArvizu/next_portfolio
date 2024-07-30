@@ -56,7 +56,9 @@ export const HoverEffect = ({
                         )}
                     </AnimatePresence>
                     <Card className={item.className}>
-                        <img src={item.img} />
+                        <div className="bg-surface-0 p-4 rounded-lg">
+                            <img src={item.img} />
+                        </div>
                         <CardTitle className={item.titleClassName}>{item.title}</CardTitle>
                         <CardDescription>{item.description}</CardDescription>
                         <div className="flex items-center justify-between mt-7 mb-3">
@@ -95,7 +97,7 @@ export const Card = ({
     return (
         <div
             className={cn(
-                "rounded-2xl h-full w-full p-4 overflow-hidden group-hover:border-slate-700 relative z-20",
+                "rounded-2xl h-full w-full p-2 overflow-hidden group-hover:border-slate-700 relative z-20",
                 className
             )}
             style={{
