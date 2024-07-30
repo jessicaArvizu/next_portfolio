@@ -16,7 +16,7 @@ const Hero = () => {
                 <h2 className="bg-clip-text z-50 text-transparent drop-shadow-lg bg-gradient-to-b from-white/100 to-white/50 mt-10 text-2xl md:text-3xl lg:text-5xl">
                     And I love to build <FlipWords words={words} /> apps
                 </h2>
-                <h3 className="bg-clip-text z-50 text-transparent drop-shadow-lg bg-gradient-to-b from-white/100 to-white/50 mt-10 text-sm md:text-xl lg:text-2xl">
+                <h3 className="bg-clip-text z-50 text-white mt-10 text-sm md:text-xl lg:text-2xl">
                     Passionate Front-End Developer <span className="text-pink">•</span> React Enthusiast <span className="text-pink">•</span> Agile Advocate <span className="text-pink">•</span> Scrum Master
                 </h3>
                 <a href="#about" className="z-100 pointer-events-auto mt-5">
