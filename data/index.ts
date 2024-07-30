@@ -78,6 +78,7 @@ export const projects = [
         className: "project-class-1",
         imgClassName: "img-class-1",
         titleClassName: "title-class-1",
+        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
         img: "/p1.svg",
         spareImg: "/spare-p1.svg", // Add a placeholder or relevant spare image
     },
@@ -89,6 +90,7 @@ export const projects = [
         className: "project-class-2",
         imgClassName: "img-class-2",
         titleClassName: "title-class-2",
+        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
         img: "/p2.svg",
         spareImg: "/spare-p2.svg", // Add a placeholder or relevant spare image
     },
@@ -100,6 +102,7 @@ export const projects = [
         className: "project-class-3",
         imgClassName: "img-class-3",
         titleClassName: "title-class-3",
+        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
         img: "/p3.svg",
         spareImg: "/spare-p3.svg", // Add a placeholder or relevant spare image
     },
@@ -111,6 +114,7 @@ export const projects = [
         className: "project-class-4",
         imgClassName: "img-class-4",
         titleClassName: "title-class-4",
+        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
         img: "/p4.svg",
         spareImg: "/spare-p4.svg", // Add a placeholder or relevant spare image
     },
