@@ -15,6 +15,7 @@ export const HoverEffect = ({
         className: string;
         imgClassName: string;
         titleClassName: string;
+        iconLists: string[];
         img: string;
         spareImg: string;
     }[];
@@ -55,8 +56,27 @@ export const HoverEffect = ({
                         )}
                     </AnimatePresence>
                     <Card className={item.className}>
+                        <img src={item.img} />
                         <CardTitle className={item.titleClassName}>{item.title}</CardTitle>
                         <CardDescription>{item.description}</CardDescription>
+                        <div className="flex items-center justify-between mt-7 mb-3">
+                            <div className="flex items-center">
+                                {item.iconLists.map((icon, index) => (
+                                    <div
+                                        key={index}
+                                        className=" lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center m-2"
+                                        style={{
+                                            transform: `translateX(-${5 * index + 2}px)`,
+                                            background: 'rgba(54, 58, 79,0.3)',
+                                            borderRadius: '16px',
+                                            border: '1px solid rgba(54, 58, 79,1)',
+                                        }}
+                                    >
+                                        <img src={icon} alt="icon5" className="p-2" />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </Card>
                 </Link>
             ))}

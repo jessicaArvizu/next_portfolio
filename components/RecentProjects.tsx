@@ -4,13 +4,17 @@ import { projects } from '@/data'
 
 const RecentProjects = () => {
   return (
-    <div className='py-10 px-10'>
+    <section id="projects">
+      <div className='py-10 px-10'>
         <h1 className='heading'>
-            
-            Some of my projects
+          Some of my {' '}
+          <span className='text-pink'>recent projects</span>
         </h1>
-        <HoverEffect items={projects} />
-    </div>
+        <div className='flex flex-wrap items-center justify-center p-3 gap-16 mt-10'>
+          <HoverEffect items={projects} />
+        </div>
+      </div>
+    </section>
   )
 }
 
