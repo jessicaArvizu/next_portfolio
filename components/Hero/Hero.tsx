@@ -1,12 +1,13 @@
 import React from 'react';
-import { FlipWords } from './ui/FlipWords';
-import Socials from './Socials/Socials';
+import { FlipWords } from '../ui/FlipWords';
+import Socials from '../Socials/Socials';
+import { SectionsEnum } from '../_enums/sectionsEnums';
 
 const Hero = () => {
     const words = ["amazing", "better", "beautiful", "modern"];
 
     return (
-        <section id='header' className="grid grid-cols-1 lg:grid-cols-2 gap-10 text-text font-bold lg:p-20">
+        <section id={SectionsEnum.About} className="grid grid-cols-1 lg:grid-cols-2 gap-10 text-text font-bold lg:p-20">
             <div className='p-10 lg:p-0'>
                 <h1 className="text-3xl lg:text-5xl text-center lg:text-left">
                     Hi, my name is
