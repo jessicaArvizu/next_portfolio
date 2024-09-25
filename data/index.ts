@@ -41,53 +41,60 @@ export const gridItems = [
 export const projects = [
     {
         id: 1,
-        title: "3D Solar System Planets to Explore",
-        description: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-        link: "https://github.com/adrianhajdin?tab=repositories",
+        title: "Tesselar",
+        link: "https://www.tesselar.mx/",
         className: "project-class-1",
         imgClassName: "img-class-1",
         titleClassName: "title-class-1",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-        img: "/p1.svg",
-        spareImg: "/spare-p1.svg", // Add a placeholder or relevant spare image
+        img: "/Img01.png",
     },
     {
         id: 2,
-        title: "Yoom - Video Conferencing App",
-        description: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-        link: "https://github.com/adrianhajdin/zoom-clone",
+        title: "Tax Champions",
+        link: "https://www.taxchampions.com/",
         className: "project-class-2",
         imgClassName: "img-class-2",
         titleClassName: "title-class-2",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-        img: "/p2.svg",
-        spareImg: "/spare-p2.svg", // Add a placeholder or relevant spare image
+        img: "/Img02.png",
     },
     {
         id: 3,
-        title: "AI Image SaaS - Canva Application",
-        description: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-        link: "https://github.com/adrianhajdin/ai_saas_app",
+        title: "A Better Today - Recovery Services",
+        link: "https://www.abtrs.com/",
         className: "project-class-3",
         imgClassName: "img-class-3",
         titleClassName: "title-class-3",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-        img: "/p3.svg",
-        spareImg: "/spare-p3.svg", // Add a placeholder or relevant spare image
+        img: "/Img03.png",
     },
     {
         id: 4,
-        title: "Animated Apple Iphone 3D Website",
-        description: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
-        link: "https://github.com/adrianhajdin/iphone",
+        title: "Correduría Pública #10, Cabo San Lucas",
+        link: "https://www.correduria10bcs.com/",
         className: "project-class-4",
         imgClassName: "img-class-4",
         titleClassName: "title-class-4",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-        img: "/p4.svg",
-        spareImg: "/spare-p4.svg", // Add a placeholder or relevant spare image
+        img: "/Img04.png",
+    },
+    {
+        id: 5,
+        title: "Recovery In Motion",
+        link: "https://www.recoveryinmotion.com/",
+        className: "project-class-4",
+        imgClassName: "img-class-4",
+        titleClassName: "title-class-4",
+        img: "/Img05.png",
+    },
+    {
+        id: 5,
+        title: "Roofing Architects",
+        link: "https://roofingarchitects.com/",
+        className: "project-class-4",
+        imgClassName: "img-class-4",
+        titleClassName: "title-class-4",
+        img: "/Img06.png",
     },
 ];
+
 
 
 export const testimonials = [

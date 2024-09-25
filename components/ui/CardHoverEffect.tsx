@@ -9,15 +9,12 @@ export const HoverEffect = ({
 }: {
     items: {
         title: string;
-        description: string;
         link: string;
         id: number;
         className: string;
         imgClassName: string;
         titleClassName: string;
-        iconLists: string[];
         img: string;
-        spareImg: string;
     }[];
     className?: string;
 }) => {
@@ -41,7 +38,7 @@ export const HoverEffect = ({
                     <AnimatePresence>
                         {hoveredIndex === idx && (
                             <motion.span
-                                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-peach/[0.3] block rounded-3xl"
+                                className="absolute inset-0 h-full w-full bg-peach/[0.3] dark:bg-peach/[0.3] block rounded-3xl"
                                 layoutId="hoverBackground"
                                 initial={{ opacity: 0 }}
                                 animate={{
@@ -57,28 +54,9 @@ export const HoverEffect = ({
                     </AnimatePresence>
                     <Card className={item.className}>
                         <div className="bg-surface-0 p-4 rounded-lg">
-                            <img src={item.img} />
+                            <img src={item.img} className="h-[200px]" />
                         </div>
                         <CardTitle className={item.titleClassName}>{item.title}</CardTitle>
-                        <CardDescription>{item.description}</CardDescription>
-                        <div className="flex items-center justify-between mt-7 mb-3">
-                            <div className="flex items-center">
-                                {item.iconLists.map((icon, index) => (
-                                    <div
-                                        key={index}
-                                        className=" lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center m-2"
-                                        style={{
-                                            transform: `translateX(-${5 * index + 2}px)`,
-                                            background: 'rgba(54, 58, 79,0.3)',
-                                            borderRadius: '16px',
-                                            border: '1px solid rgba(54, 58, 79,1)',
-                                        }}
-                                    >
-                                        <img src={icon} alt="icon5" className="p-2" />
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
                     </Card>
                 </Link>
             ))}

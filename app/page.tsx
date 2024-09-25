@@ -3,7 +3,7 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import Hero from "@/components/Hero/Hero";
 import Grid from "@/components/Grid";
-import RecentProjects from "@/components/RecentProjects";
+import RecentProjects from "@/components/Projects/RecentProjects";
 import Experience from "@/components/Experience/Experience";
 
 export default function Home() {
