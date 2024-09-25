@@ -1,13 +1,10 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { Meteors } from "./MeteorEffect";
 import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from '@/data/confetti.json'
 import MagicButton from "./MagicButton";
-import { IoCopyOutline } from "react-icons/io5";
-import { WavyBackground } from "./BackgroundWavy";
 
 export const BentoGrid = ({
     className,
@@ -58,7 +55,7 @@ export const BentoGridItem = ({
     return (
         <div
             className={cn(
-                "row-span-1 relative overflow-hidden rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 justify-between flex flex-col space-y-4",
+                "row-span-1 relative overflow-hidden rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-2 justify-between flex flex-col space-y-4",
                 className
             )}
             style={{
@@ -99,9 +96,11 @@ export const BentoGridItem = ({
                         {title}
                     </div>
 
-                    <div className="font-sans font-extralight text-sm md:text-xs z-10 text-text">
+                    <div className="font-sans text-sm z-10 text-text">
                         {description}
                     </div>
+
+                    {}
 
                     {id === 2 && <Meteors number={50} />}
 
