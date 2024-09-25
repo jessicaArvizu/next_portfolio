@@ -70,7 +70,7 @@ export const BentoGridItem = ({
                 border: '1px solid rgba(54, 58, 79,1)',
             }}
         >
-            <div className={`${id === 4} && 'flex justify-center h-full'`}>
+            <div className={`${id === 3} && 'flex justify-center h-full'`}>
                 <div className="w-full h-full absolute">
                     {img && (
                         <img
@@ -149,29 +149,6 @@ export const BentoGridItem = ({
                                         </span>
                                     ))}
                             </div>
-                        </div>
-                    )}
-
-                    {id === 5 && (
-                        <div className="w-full relative">
-                            <div
-                                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                                    }`}
-                            >
-                                <Lottie options={{
-                                    loop: copied,
-                                    autoplay: copied,
-                                    animationData,
-                                    rendererSettings: {
-                                        preserveAspectRatio: 'xMidYMid slice'
-                                    }
-                                }} />
-                            </div>
-
-                            <MagicButton
-                                title={copied ? "Email is Copied!" : "Copy my email address"}
-                                handleClick={handleCopy}
-                            />
                         </div>
                     )}
                 </div>

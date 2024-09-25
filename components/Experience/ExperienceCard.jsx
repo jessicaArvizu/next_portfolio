@@ -38,6 +38,7 @@ function ExperienceCard(props) {
                     <p className='text-sm font-normal'>
                         {props.description}
                     </p>
+                    <hr className="my-4 border-surface-0"/>
                     <Skills skills={props.skills} />
                 </div>
             </motion.div>
