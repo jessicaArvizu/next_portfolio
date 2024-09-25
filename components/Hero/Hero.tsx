@@ -14,12 +14,11 @@ const Hero = () => {
                     <br />
                     <span className=" text-3xl text-peach lg:text-6xl ">Jessica Arvizu</span>
                 </h1>
-                <h2 className="mt-10 text-2xl lg:text-3xl text-center lg:text-left">
+                <h2 className="mt-10 text-xl lg:text-3xl text-center lg:text-left">
                     And I love to build
-                    <br />
                     <FlipWords words={words} /> apps
                 </h2>
-                <h3 className="mt-10 text-sm lg:text-xl text-center lg:text-left font-normal">
+                <h3 className="mt-10 text-sm lg:text-lg text-center lg:text-left font-normal text-text">
                     Passionate Front-End Developer
                     <span className="text-peach">•</span> React Enthusiast <span className="text-peach">•</span> Agile Advocate <span className="text-peach">•</span> Scrum Master
                 </h3>
