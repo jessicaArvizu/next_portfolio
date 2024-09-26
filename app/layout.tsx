@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Nunito_Sans } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
-const nunito = Nunito_Sans({ subsets: ["latin"] });
+const nunito = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Jessica Arvizu Portfolio",

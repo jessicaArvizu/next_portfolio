@@ -7,14 +7,13 @@ function ExperienceCard(props) {
     return (
         <a href={props.url} target='_blank' rel='noopener noreferrer'>
             <motion.div
-                className='grid grid-cols-1 space-y-5 p-4 rounded h-full'
+                className='grid grid-cols-1 justify-evenly space-y-2 p-4 rounded h-full'
                 style={{
-                    background: 'rgba(54, 58, 79,0.3)',
+                    background: 'rgba( 68, 71, 105, 0.5 )',
                     borderRadius: '16px',
-                    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                    boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)',
                     backdropFilter: 'blur(5px)',
                     WebkitBackdropFilter: 'blur(5px)',
-                    border: '1px solid rgba(54, 58, 79,1)',
                 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.90 }}
@@ -28,7 +27,7 @@ function ExperienceCard(props) {
                         {titleParts.length === 2 ? (
                             <span>
                                 <span>{titleParts[0]}</span>
-                                <span className='text-peach'>|</span>
+                                <span className='text-peach font-extrabold'>|</span>
                                 <span>{titleParts[1]}</span>
                             </span>
                         ) : (

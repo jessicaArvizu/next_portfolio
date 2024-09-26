@@ -13,7 +13,7 @@ const SocialIcon: React.FC<SocialIconProps> = ({ icon, link }) => {
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
             <a
-                className="hover:text-peach transform transition duration-300 sm:transform-none"
+                className="text-surface-0 hover:text-peach transform transition duration-300 sm:transform-none"
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"

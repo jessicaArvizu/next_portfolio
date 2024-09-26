@@ -1,13 +1,9 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { Meteors } from "./MeteorEffect";
-import Lottie from "react-lottie";
-import { useState } from "react";
-import animationData from '@/data/confetti.json'
-import MagicButton from "./MagicButton";
 import SkillItem from "../Skills/SkillItem";
-import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaFigma, FaReact, FaGit, FaGithub, FaLaptopCode, FaCog, FaSass, FaHandsHelping, FaWordpress, FaElementor, FaWix, FaWeebly } from 'react-icons/fa';
-import { FaAccessibleIcon } from "react-icons/fa6";
+import { FaFigma, FaLaptopCode, FaCog, FaSass, FaHandsHelping, FaElementor, FaWix, FaWeebly } from 'react-icons/fa';
+import { RiBootstrapFill, RiCss3Fill, RiGitBranchFill, RiGithubFill, RiHtml5Fill, RiJavascriptFill, RiNextjsFill, RiNodejsFill, RiReactjsFill, RiTailwindCssFill, RiWordpressFill } from "react-icons/ri";
 
 export const BentoGrid = ({
     className,
@@ -33,8 +29,6 @@ export const BentoGridItem = ({
     title,
     description,
     id,
-    img,
-    imgClassName,
     titleClassName,
     spareImg,
 }: {
@@ -42,18 +36,9 @@ export const BentoGridItem = ({
     title?: string | React.ReactNode;
     description?: string | React.ReactNode;
     id: number;
-    img?: string;
-    imgClassName?: string;
     titleClassName?: string;
     spareImg?: string;
 }) => {
-
-    const [copied, setCopied] = useState(false);
-
-    const handleCopy = () => {
-        navigator.clipboard.writeText('jessica.arvizu.trabajo@gmail.com');
-        setCopied(true);
-    }
 
     return (
         <div
@@ -62,24 +47,14 @@ export const BentoGridItem = ({
                 className
             )}
             style={{
-                background: 'rgba(54, 58, 79,0.3)',
+                background: 'rgba( 68, 71, 105, 0.25 )',
                 borderRadius: '16px',
-                boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)',
                 backdropFilter: 'blur(5px)',
                 WebkitBackdropFilter: 'blur(5px)',
-                border: '1px solid rgba(54, 58, 79,1)',
             }}
         >
             <div className={`${id === 3} && 'flex justify-center h-full'`}>
-                <div className="w-full h-full absolute">
-                    {img && (
-                        <img
-                            src={img}
-                            alt={img}
-                            className={cn(imgClassName, 'object-cover, object-center')}
-                        />
-                    )}
-                </div>
                 <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
                     {spareImg && (
                         <img
@@ -104,20 +79,23 @@ export const BentoGridItem = ({
                     </div>
 
                     {id === 1 && (
-                        <div className="grid grid-cols-4 gap-2">
-                            <SkillItem Icon={FaHtml5} name="HTML 5" />
-                            <SkillItem Icon={FaCss3Alt} name="CSS 3" />
-                            <SkillItem Icon={FaJs} name="JavaScript" />
-                            <SkillItem Icon={FaNodeJs} name="Node" />
+                        <div className="grid grid-cols-5 gap-2">
+                            <SkillItem Icon={RiHtml5Fill} name="HTML 5" />
+                            <SkillItem Icon={RiCss3Fill} name="CSS 3" />
+                            <SkillItem Icon={RiBootstrapFill} name="Bootstrap" />
+                            <SkillItem Icon={RiTailwindCssFill} name="Tailwind CSS" />
+                            <SkillItem Icon={RiJavascriptFill} name="JavaScript" />
+                            <SkillItem Icon={RiNextjsFill} name="Next JS" />
+                            <SkillItem Icon={RiNodejsFill} name="Node" />
                             <SkillItem Icon={FaFigma} name="Figma" />
-                            <SkillItem Icon={FaReact} name="React" />
-                            <SkillItem Icon={FaGit} name="Git" />
-                            <SkillItem Icon={FaGithub} name="GitHub" />
+                            <SkillItem Icon={RiReactjsFill} name="React" />
+                            <SkillItem Icon={RiGitBranchFill} name="Git" />
+                            <SkillItem Icon={RiGithubFill} name="GitHub" />
                             <SkillItem Icon={FaLaptopCode} name="Responsive Design" />
                             <SkillItem Icon={FaCog} name="RESTful APIs" />
                             <SkillItem Icon={FaSass} name="Sass" />
                             <SkillItem Icon={FaHandsHelping} name="Web Accessibility" />
-                            <SkillItem Icon={FaWordpress} name="WordPress" />
+                            <SkillItem Icon={RiWordpressFill} name="WordPress" />
                             <SkillItem Icon={FaElementor} name="Elementor" />
                             <SkillItem Icon={FaWix} name="Wix" />
                             <SkillItem Icon={FaWeebly} name="Weebly" />
@@ -131,20 +109,20 @@ export const BentoGridItem = ({
                             <div className=" flex flex-col gap-2 lg:gap-3">
                                 {['Next.js', 'Typescript', 'JavaScript'].map
                                     ((item) => (
-                                        <span key={item} className="py-2 px-3 text-xs opacity-50
-                                     lg:opacity-100 rounded-xl text-center text-text bg-surface-1">
+                                        <span key={item} className="py-2 px-3 text-xs opacity-100
+                                     lg:opacity-100 rounded-xl text-center font-bold text-surface-1 bg-peach">
                                             {item}
                                         </span>
                                     ))}
-                                <span className="py-4 px-4 text-xs opacity-20 rounded-xl text-center text-text bg-surface-1"></span>
+                                <span className="py-4 px-4 text-xs opacity-20 rounded-xl text-center text-text bg-surface-0"></span>
                             </div>
 
                             <div className=" flex flex-col gap-2 lg:gap-3">
-                                <span className="py-4 px-4 text-xs opacity-20 rounded-xl text-center text-text bg-surface-1"></span>
+                                <span className="py-4 px-4 text-xs opacity-20 rounded-xl text-center text-text bg-surface-0"></span>
                                 {['Tailwind', 'WordPress', 'React.js'].map
                                     ((item) => (
-                                        <span key={item} className="py-2 px-2 lg:px-3 text-xs opacity-50
-                                     lg:opacity-100 rounded-xl text-center bg-surface-1">
+                                        <span key={item} className="py-2 px-2 lg:px-3 text-xs opacity-100
+                                     lg:opacity-100 rounded-xl text-center font-bold text-surface-1 bg-peach">
                                             {item}
                                         </span>
                                     ))}

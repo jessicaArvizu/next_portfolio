@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
     {
         id: 1,
-        title: "Some of my skills!  🌟",
+        title: "The tools I use",
         description: "",
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
@@ -18,7 +18,7 @@ export const gridItems = [
     },
     {
         id: 2,
-        title: "I'm very flexible with time zone communications",
+        title: "I'm very flexible with time zone communications.",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
