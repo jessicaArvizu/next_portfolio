@@ -1,5 +1,3 @@
-import { FaLocationArrow } from "react-icons/fa6";
-import { socialMedia } from "@/data";
 import { SectionsEnum } from "../_enums/sectionsEnums";
 import Socials from "../Socials/Socials";
 
