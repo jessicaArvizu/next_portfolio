@@ -1,31 +1,27 @@
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-config.autoAddCss = false
 
-const nunito = Raleway({ subsets: ["latin"] });
+config.autoAddCss = false;
+
+const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Jessica Arvizu Portfolio",
   description: "Frontend Developer",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+type RootLayoutProps = {
+  children: React.ReactNode | null | undefined;
+};
+
+export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <ThemeProvider attribute="class" enableSystem disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
-
     </html>
   );
 }
