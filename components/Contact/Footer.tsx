@@ -9,10 +9,10 @@ const Footer = () => {
         >
             <div className="flex flex-col items-center justify-center text-center">
                 <h1 className="heading lg:max-w-[45vw]">
-                    Have an idea you'd like to <span className="text-peach">bring to life</span>?
+                    Have an idea you&apos;d like to <span className="text-peach">bring to life</span>?
                 </h1>
                 <p className="text-white-200 md:mt-10 my-5 text-center">
-                    Let's work together to turn your vision into <span className="text-peach">reality</span>. Reach out today, and let's make it happen!
+                    Let&apos;s work together to turn your vision into <span className="text-peach">reality</span>. Reach out today, and let&apos;s make it happen!
                 </p>
                 <div className="flex items-center justify-center">
                     <Socials />
