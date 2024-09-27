@@ -65,7 +65,7 @@ export const BentoGridItem = ({
                     </div>
 
                     {id === 1 && (
-                        <div className="grid grid-cols-5 gap-2">
+                        <div className="grid grid-cols-4 gap-2">
                             <SkillItem Icon={FaHtml5} name="HTML 5" />
                             <SkillItem Icon={FaCss3Alt} name="CSS 3" />
                             <SkillItem Icon={FaBootstrap} name="Bootstrap" />
