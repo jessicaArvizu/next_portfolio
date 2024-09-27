@@ -2,10 +2,11 @@
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import Hero from "@/components/Hero/Hero";
-import Grid from "@/components/Grid";
+import SkillGrid from "@/components/Skills/SkillGrid";
 import RecentProjects from "@/components/Projects/RecentProjects";
 import Experience from "@/components/Experience/Experience";
 import { GridBackground } from "@/components/ui/GridBackground";
+import Footer from "@/components/Contact/Footer";
 
 export default function Home() {
   return (
@@ -14,9 +15,10 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <GridBackground>
           <Hero />
-          <Grid />
+          <SkillGrid />
           <Experience />
           <RecentProjects />
+          <Footer/>
         </GridBackground>
       </div>
     </main>

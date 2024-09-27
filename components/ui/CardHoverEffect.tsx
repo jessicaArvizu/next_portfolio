@@ -38,7 +38,7 @@ export const HoverEffect = ({
                     <AnimatePresence>
                         {hoveredIndex === idx && (
                             <motion.span
-                                className="absolute inset-0 h-full w-full bg-peach/[0.3] dark:bg-peach/[0.3] block rounded-3xl"
+                                className="absolute inset-0 h-full w-full bg-peach/[0.4] block rounded-[16px]"
                                 layoutId="hoverBackground"
                                 initial={{ opacity: 0 }}
                                 animate={{
@@ -53,8 +53,8 @@ export const HoverEffect = ({
                         )}
                     </AnimatePresence>
                     <Card className={item.className}>
-                        <div className="bg-surface-0 p-4 rounded-lg">
-                            <img src={item.img} className="h-[200px]" />
+                        <div className="bg-surface-1 p-4 rounded-lg">
+                            <img src={item.img} className="h-[200px] w-full" />
                         </div>
                         <CardTitle className={item.titleClassName}>{item.title}</CardTitle>
                     </Card>
@@ -79,12 +79,11 @@ export const Card = ({
                 className
             )}
             style={{
-                background: 'rgba(54, 58, 79,0.3)',
+                background: 'rgba( 68, 71, 105, 0.5 )',
                 borderRadius: '16px',
-                boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)',
                 backdropFilter: 'blur(5px)',
                 WebkitBackdropFilter: 'blur(5px)',
-                border: '1px solid rgba(54, 58, 79,1)',
             }}
         >
             <div className="relative z-50">
@@ -101,26 +100,8 @@ export const CardTitle = ({
     children: React.ReactNode;
 }) => {
     return (
-        <h4 className={cn("text-peach font-bold tracking-wide mt-4", className)}>
+        <h4 className={cn("text-peach font-medium tracking-wide mt-4", className)}>
             {children}
         </h4>
-    );
-};
-export const CardDescription = ({
-    className,
-    children,
-}: {
-    className?: string;
-    children: React.ReactNode;
-}) => {
-    return (
-        <p
-            className={cn(
-                "mt-8 text-text tracking-wide leading-relaxed text-sm",
-                className
-            )}
-        >
-            {children}
-        </p>
     );
 };

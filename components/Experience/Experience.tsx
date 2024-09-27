@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Experience() {
     return (
-        <section id={SectionsEnum.Experience} className='text-text font-bold p-10 lg:p-20'>
+        <section id={SectionsEnum.Experience} className='text-text font-bold px-10 pt-10 lg:px-20'>
             <p className='heading mb-10'>
                 My {' '}
                 <span className='text-peach'>experience</span>

@@ -1,8 +1,12 @@
+import { SectionsEnum } from "@/components/_enums/sectionsEnums";
+
 export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
+    { name: "About", link: `#${SectionsEnum.About}` },
+    { name: "My skills", link: `#${SectionsEnum.Skills}`},
+    { name: "Experience", link: `#${SectionsEnum.Experience}`},
+    { name: "Projects", link: `#${SectionsEnum.Projects}` },
+    { name: "Contact", link: `#${SectionsEnum.Contact}` },
+
 ];
 
 export const gridItems = [

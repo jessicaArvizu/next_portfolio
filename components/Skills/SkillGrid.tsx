@@ -1,10 +1,11 @@
 import React from 'react';
-import { BentoGrid, BentoGridItem } from './ui/BentoGrid';
+import { BentoGrid, BentoGridItem } from '../ui/BentoGrid';
 import { gridItems } from '@/data';
+import { SectionsEnum } from '../_enums/sectionsEnums';
 
-const Grid = () => {
+const SkillGrid = () => {
   return (
-    <section id="about" className='mx-10 my-10'>
+    <section id={SectionsEnum.Skills} className='px-10 lg:px-20'>
       <BentoGrid>
         {gridItems.map(
           ({ id, title, description, className, img, imgClassName, titleClassName, spareImg }) => (
@@ -26,4 +27,4 @@ const Grid = () => {
   );
 }
 
-export default Grid;
+export default SkillGrid;

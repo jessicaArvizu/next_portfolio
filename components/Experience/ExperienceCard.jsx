@@ -18,12 +18,12 @@ function ExperienceCard(props) {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.90 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-                <div className='lg:col-span-1 text-text text-center text-xs'>
+                <div className='lg:col-span-1 text-text font-medium text-center text-xs'>
                     {props.date}
                 </div>
-                <h4 className='text-sm text-peach text-center'>{props.subTitle}</h4>
+                <h4 className='text-sm font-extrabold text-peach text-center'>{props.subTitle}</h4>
                 <div>
-                    <h3 className='text-xs font-normal mb-5 text-center'>
+                    <h3 className='text-xs font-medium mb-5 text-center'>
                         {titleParts.length === 2 ? (
                             <span>
                                 <span>{titleParts[0]}</span>
@@ -34,7 +34,7 @@ function ExperienceCard(props) {
                             <span>{props.title}</span>
                         )}
                     </h3>
-                    <p className='text-sm font-normal'>
+                    <p className='text-sm font-medium'>
                         {props.description}
                     </p>
                     <hr className="my-4 border-surface-0"/>
