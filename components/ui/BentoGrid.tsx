@@ -1,9 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { Meteors } from "./MeteorEffect";
 import SkillItem from "../Skills/SkillItem";
-import { FaFigma, FaLaptopCode, FaCog, FaSass, FaHandsHelping, FaElementor, FaWix, FaWeebly } from 'react-icons/fa';
-import { RiBootstrapFill, RiCss3Fill, RiGitBranchFill, RiGithubFill, RiHtml5Fill, RiJavascriptFill, RiNextjsFill, RiNodejsFill, RiReactjsFill, RiTailwindCssFill, RiWordpressFill } from "react-icons/ri";
+import { FaBootstrap, FaCss3Alt, FaElementor, FaFigma, FaGear, FaGit, FaGithub, FaHandSparkles, FaHtml5, FaJs, FaLaptopCode, FaNodeJs, FaReact, FaSass, FaWeebly, FaWifi, FaWix, FaWordpress } from "react-icons/fa6";
 
 export const BentoGrid = ({
     className,
@@ -80,22 +78,20 @@ export const BentoGridItem = ({
 
                     {id === 1 && (
                         <div className="grid grid-cols-5 gap-2">
-                            <SkillItem Icon={RiHtml5Fill} name="HTML 5" />
-                            <SkillItem Icon={RiCss3Fill} name="CSS 3" />
-                            <SkillItem Icon={RiBootstrapFill} name="Bootstrap" />
-                            <SkillItem Icon={RiTailwindCssFill} name="Tailwind CSS" />
-                            <SkillItem Icon={RiJavascriptFill} name="JavaScript" />
-                            <SkillItem Icon={RiNextjsFill} name="Next JS" />
-                            <SkillItem Icon={RiNodejsFill} name="Node" />
+                            <SkillItem Icon={FaHtml5} name="HTML 5" />
+                            <SkillItem Icon={FaCss3Alt} name="CSS 3" />
+                            <SkillItem Icon={FaBootstrap} name="Bootstrap" />
+                            <SkillItem Icon={FaJs} name="JavaScript" />
+                            <SkillItem Icon={FaNodeJs} name="Node" />
                             <SkillItem Icon={FaFigma} name="Figma" />
-                            <SkillItem Icon={RiReactjsFill} name="React" />
-                            <SkillItem Icon={RiGitBranchFill} name="Git" />
-                            <SkillItem Icon={RiGithubFill} name="GitHub" />
+                            <SkillItem Icon={FaReact} name="React" />
+                            <SkillItem Icon={FaGit} name="Git" />
+                            <SkillItem Icon={FaGithub} name="GitHub" />
                             <SkillItem Icon={FaLaptopCode} name="Responsive Design" />
-                            <SkillItem Icon={FaCog} name="RESTful APIs" />
+                            <SkillItem Icon={FaGear} name="RESTful APIs" />
                             <SkillItem Icon={FaSass} name="Sass" />
-                            <SkillItem Icon={FaHandsHelping} name="Web Accessibility" />
-                            <SkillItem Icon={RiWordpressFill} name="WordPress" />
+                            <SkillItem Icon={FaHandSparkles} name="Web Accessibility" />
+                            <SkillItem Icon={FaWordpress} name="WordPress" />
                             <SkillItem Icon={FaElementor} name="Elementor" />
                             <SkillItem Icon={FaWix} name="Wix" />
                             <SkillItem Icon={FaWeebly} name="Weebly" />
