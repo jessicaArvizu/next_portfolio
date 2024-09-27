@@ -8,7 +8,7 @@ const Hero = () => {
 
     return (
         <section id={SectionsEnum.About} className="grid grid-cols-1 lg:grid-cols-2 gap-10 text-text font-bold p-10 lg:p-20">
-            <div className='p-10 lg:p-0'>
+            <div>
                 <h1 className="text-3xl lg:text-5xl text-center lg:text-left">
                     Hi, my name is
                     <br />
@@ -25,7 +25,7 @@ const Hero = () => {
 
                 <Socials />
             </div>
-            <div className='font-normal text-sm lg:text-[18px] p-10 lg:p-0 space-y-8'>
+            <div className='font-normal text-sm lg:text-[18px] lg:p-0 space-y-8'>
                 <p>
                     A decade ago, my journey into the enchanting world of frontend development began with the humble act of transforming Tumblr themes using the magic of HTML and CSS. Fast forward to today, and I find myself immersed in the dynamic realms of React, JavaScript, Bootstrap, and Tailwind – the tools that bring my digital dreams to life.
                 </p>
