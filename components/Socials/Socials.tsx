@@ -1,8 +1,8 @@
-import { FaCodepen, FaLinkedin,FaCode, FaGraduationCap, FaEnvelope, FaGithubSquare } from "react-icons/fa";
+import { FaCode, FaEnvelope, FaGithub, FaGraduationCap, FaLinkedin } from "react-icons/fa";
 import SocialIcon from "./SocialIcon";
 
 const socialData = [
-    { icon: <FaGithubSquare/>, link: "https://github.com/jessicaArvizu" },
+    { icon: <FaGithub/>, link: "https://github.com/jessicaArvizu" },
     { icon: <FaLinkedin/>, link: "https://www.linkedin.com/in/jessica-arvizu/" },
     {icon: <FaEnvelope/>, link:'mailto:jessica.arvizu.trabajo@gmail.com'},
     { icon: <FaCode/>, link: "https://www.frontendmentor.io/profile/jessicaArvizu" },
