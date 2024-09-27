@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import SkillItem from "../Skills/SkillItem";
-import { FaBootstrap, FaCss3Alt, FaElementor, FaFigma, FaGear, FaGit, FaGithub, FaHandSparkles, FaHtml5, FaJs, FaLaptopCode, FaNodeJs, FaReact, FaSass, FaWeebly, FaWifi, FaWix, FaWordpress } from "react-icons/fa6";
+import { FaBootstrap, FaCss3Alt, FaElementor, FaFigma, FaCog, FaGit, FaGithub, FaHandSparkles, FaHtml5, FaJs, FaLaptopCode, FaNodeJs, FaReact, FaSass, FaWeebly, FaWifi, FaWix, FaWordpress } from "react-icons/fa";
 
 export const BentoGrid = ({
     className,
@@ -88,7 +88,7 @@ export const BentoGridItem = ({
                             <SkillItem Icon={FaGit} name="Git" />
                             <SkillItem Icon={FaGithub} name="GitHub" />
                             <SkillItem Icon={FaLaptopCode} name="Responsive Design" />
-                            <SkillItem Icon={FaGear} name="RESTful APIs" />
+                            <SkillItem Icon={FaCog} name="RESTful APIs" />
                             <SkillItem Icon={FaSass} name="Sass" />
                             <SkillItem Icon={FaHandSparkles} name="Web Accessibility" />
                             <SkillItem Icon={FaWordpress} name="WordPress" />
