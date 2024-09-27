@@ -2,11 +2,11 @@ import { FaCode, FaEnvelope, FaGithub, FaGraduationCap, FaLinkedin } from "react
 import SocialIcon from "./SocialIcon";
 
 const socialData = [
-    { icon: <FaGithub/>, link: "https://github.com/jessicaArvizu" },
-    { icon: <FaLinkedin/>, link: "https://www.linkedin.com/in/jessica-arvizu/" },
-    {icon: <FaEnvelope/>, link:'mailto:jessica.arvizu.trabajo@gmail.com'},
-    { icon: <FaCode/>, link: "https://www.frontendmentor.io/profile/jessicaArvizu" },
-    { icon: <FaGraduationCap/>, link: "https://www.codecademy.com/profiles/jessArvizu" },
+    { icon: <FaGithub />, link: "https://github.com/jessicaArvizu" },
+    { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/jessica-arvizu/" },
+    { icon: <FaEnvelope />, link: "mailto:jessica.arvizu.trabajo@gmail.com" },
+    { icon: <FaCode />, link: "https://www.frontendmentor.io/profile/jessicaArvizu" },
+    { icon: <FaGraduationCap />, link: "https://www.codecademy.com/profiles/jessArvizu" },
 ];
 
 const Socials = () => {
