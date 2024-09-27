@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import SkillItem from "../Skills/SkillItem";
-import { FaBootstrap, FaCss3Alt, FaElementor, FaFigma, FaCog, FaGit, FaGithub, FaHandSparkles, FaHtml5, FaJs, FaLaptopCode, FaNodeJs, FaReact, FaSass, FaWeebly, FaWifi, FaWix, FaWordpress } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaElementor, FaFigma, FaCog, FaGit, FaGithub, FaHandSparkles, FaHtml5, FaJs, FaLaptopCode, FaNodeJs, FaReact, FaSass, FaWeebly, FaWix, FaWordpress } from "react-icons/fa";
 
 export const BentoGrid = ({
     className,
