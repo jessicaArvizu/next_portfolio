@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer
             id={SectionsEnum.Contact}
-            className="w-full flex items-center justify-center text-center py-10"
+            className="w-full flex items-center justify-center text-center py-10 p-10 lg:p-20"
         >
             <div className="flex flex-col items-center justify-center text-center">
                 <h1 className="heading lg:max-w-[45vw]">
