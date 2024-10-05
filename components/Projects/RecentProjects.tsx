@@ -1,7 +1,7 @@
 import React from 'react'
 import { projects } from '@/data'
-import { HoverEffect } from '../ui/CardHoverEffect'
 import { SectionsEnum } from '../_enums/sectionsEnums'
+import { InfiniteMovingCards } from '../ui/InfiniteCards'
 
 const RecentProjects = () => {
   return (
@@ -11,7 +11,11 @@ const RecentProjects = () => {
         <span className='text-peach'>recent projects</span>
       </h1>
       <div className='flex flex-wrap items-center justify-center gap-16'>
-        <HoverEffect items={projects} />
+        <InfiniteMovingCards
+          items={projects}
+          direction="right"
+          speed="slow"
+        />
       </div>
     </section>
   )
