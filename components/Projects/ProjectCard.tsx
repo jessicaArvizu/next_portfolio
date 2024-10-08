@@ -2,7 +2,7 @@ import React from 'react'
 import { WobbleCard } from './WobbleCard'
 import Image from 'next/image'
 
-const ProjectCard = ({ title, img }) => {
+const ProjectCard = ({ title, img }: { title: string, img: string }) => {
     return (
         <WobbleCard className='col-span-1 h-full'>
             <div className="grid grid-cols-3 h-full">
@@ -14,7 +14,7 @@ const ProjectCard = ({ title, img }) => {
                 <div className="col-span-1 h-full relative">
                     <Image
                         src={img}
-                        layout="fill" 
+                        layout="fill"
                         objectFit="cover"
                         alt="Project image"
                         className="grayscale filter"
