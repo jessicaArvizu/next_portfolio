@@ -71,7 +71,6 @@ export const BentoGridItem = ({
                             <SkillItem Icon={FaBootstrap} name="Bootstrap" />
                             <SkillItem Icon={FaJs} name="JavaScript" />
                             <SkillItem Icon={FaNodeJs} name="Node" />
-                            <SkillItem Icon={FaFigma} name="Figma" />
                             <SkillItem Icon={FaReact} name="React" />
                             <SkillItem Icon={FaGit} name="Git" />
                             <SkillItem Icon={FaGithub} name="GitHub" />
@@ -89,6 +88,7 @@ export const BentoGridItem = ({
                     {id === 3 && (
                         <div className="flex gap-2 lg:gap-3 w-fit absolute -right-3 lg:right-5">
                             <div className=" flex flex-col gap-2 lg:gap-3">
+                                
                                 {['Next.js', 'Typescript', 'JavaScript'].map
                                     ((item) => (
                                         <span key={item} className="py-2 px-3 text-xs opacity-100

@@ -7,7 +7,7 @@ const Hero = () => {
     const words = ["amazing", "better", "beautiful", "modern"];
 
     return (
-        <section id={SectionsEnum.About} className="grid grid-cols-1 lg:grid-cols-2 gap-10 text-text font-bold px-10 pt-10 lg:px-20">
+        <section id={SectionsEnum.About} className="grid grid-cols-1 lg:grid-cols-2 gap-10 text-text font-bold p-20">
             <div>
                 <h1 className="text-3xl lg:text-5xl text-center lg:text-left">
                     Hi, my name is
