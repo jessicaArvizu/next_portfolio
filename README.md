@@ -9,20 +9,18 @@ From responsive designs to clean code practices, this portfolio reflects my comm
 
 ## Live Site
 - [Check out the live site!](www.jessicaarvizu.com)
+
 ## Fonts
 **Fonts**: [Nunito](https://fonts.google.com/specimen/Nunito)
+
 ## Color Reference
 
 | Color Name    | Hex          | Color |
 | ------------- |------------- |-------|
-| Pink |#f5bde6|![#f5bde6](https://via.placeholder.com/10/f5bde6?text=+)|
-| Peach |#ffb17a|![#ffb17a](https://via.placeholder.com/10/ffb17a?text=+)
-| Green |#a6da95|![#a6da95](https://via.placeholder.com/10/a6da95?text=+)
-| Lavender |#b7bdf8|![#b7bdf8](https://via.placeholder.com/10/b7bdf8?text=+)
-| Blue |#7dc4e4|![#7dc4e4](https://via.placeholder.com/10/7dc4e4?text=+)
-| Very dark desaturated blue |#444769|![#444769](https://via.placeholder.com/10/444769?text=+)
-| Mostly desaturated dark blue |#676f9d|![#676f9d](https://via.placeholder.com/10/676f9d?text=+)
-| Light grayish blue |#e9edfb|![#e9edfb](https://via.placeholder.com/10/e9edfb?text=+)
+| Peach |#ffb17a|![#ffb17a](https://via.placeholder.com/10/ffb17a?text=+)|
+| Very dark desaturated blue |#444769|![#444769](https://via.placeholder.com/10/444769?text=+)|
+| Mostly desaturated dark blue |#676f9d|![#676f9d](https://via.placeholder.com/10/676f9d?text=+)|
+| Light grayish blue |#e9edfb|![#e9edfb](https://via.placeholder.com/10/e9edfb?text=+)|
 
 ## Technologies Used
 
@@ -42,7 +40,7 @@ From responsive designs to clean code practices, this portfolio reflects my comm
 
 ## Screenshots
 
-![App Screenshot](./public/screenshot.png)
+![App Screenshot](./public/Screenshot.jpeg)
 
 
 ## License
